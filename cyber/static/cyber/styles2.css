@@ -1,0 +1,64 @@
+body{
+  background-color: black;
+	/* background-color:#fef5bc;*/
+}
+   /* #fde0a2 */
+#logo{
+
+	float: left;
+	width: 180px;
+	}
+
+
+
+#BusquedaG{
+	padding-top: 10px;
+
+}
+#Lventa{
+
+	display: block;
+	width: 250px;
+}
+#prueba1{
+	
+	height: 350px;
+  width: 200px;
+  border-radius: 25px;
+  /*background:  #bce6fe ;*/
+  background-color: #fef5bc;
+  
+  /*border:3px solid black;*/
+  margin-left: 45px;
+  margin-top: 50px;
+  color:    #ec4542  ;
+
+}
+
+#pequeno{
+	
+	height: 100px;
+	width:198px;
+}
+
+#pie{
+  height: 50px;
+  background-color:   #fff3b9    ;
+
+}
+
+
+h2, h1, h3, h4{
+	    font-family: 'Bebas Neue', cursive;
+}
+
+#prueba1:hover {
+   /* background: #cabcfe ;*/
+   height: 400px;
+   width: 250px;
+   opacity: 4;
+   color:  #7d3c98 ;
+   font-style: bold;
+   text-shadow: 1px 1px #000000;
+     text-transform: capitalize;
+}

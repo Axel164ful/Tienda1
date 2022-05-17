@@ -1,0 +1,61 @@
+{% extends 'citas/base.html' %}
+
+{% block content %}
+	
+
+
+    {% if user.is_authenticated %}
+    	<div class="row">
+    		<div class="col-lg-12 col-md-12 col-12 col-xs-12">
+    			<a href="{%url 'logout'%}">cierra tu sesión</a>
+    		</div>
+    	</div> 
+   	{% endif %} 
+
+
+
+    <div class="row" >
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" >
+			<h1 class="text-center" id = "titu">No visitados</h1>
+			
+    		{% for titulo in titulos_lugar %} 
+    			<h4 class="text-center" id="seleccion">
+
+    				<a href="{% url 'citas:resena' titulo.pk %}">{{ titulo }}</a>
+    				
+    			</h4>
+    		{% endfor %}
+		</div>
+
+
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<h1 class="text-center" id = "titu">Ya visitados</h1>
+			<div id="desenfoque">
+    			{% for titulo1 in titulos_lugar2 %} 
+    				<h4 class="text-center" id="seleccion">
+    					<a href="{% url 'citas:resena' titulo1.pk %}">{{ titulo1 }}
+    					</a></h4>
+    			{% endfor %}
+    		</div>
+		</div>
+	</div>
+
+
+
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+			<h3 class="text-rigth">
+				<a href="{% url 'citas:edicion' %}">Agregar entrada</a>
+			</h3>
+
+
+		<div>
+
+	</div>
+
+
+    
+
+
+{% endblock %}

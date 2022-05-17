@@ -1,0 +1,18 @@
+{% extends 'citas/base.html' %}
+
+{% block content %}
+    <h3 class="text-center">Agrega una reseña de lugar</h3>
+
+    <form  action=" {% url 'citas:edicion_2' %}" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Listo">
+</form>
+
+
+<script type="text/javascript">
+	const input = document.querySelector();
+	input.setAttribute('type', 'textarea');
+</script>
+
+{% endblock %}

@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+ <html>
+   <head>
+    <title>LISTA DE CITAS</title>
+    	
+      <link rel="stylesheet" type="text/css" href="{% static 'citas/1.css' %}">
+
+   
+       <!--Sitio con la fuente-->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+        <!--Sitio con la fuente-->
+
+	     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" type="text/css" href=" https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+   </head>
+
+<body id ="cuerpo">
+
+	<div class="container-fluid">
+
+        
+         
+         
+         {% block content %}
+
+            
+
+         
+         {% endblock %}
+  </div>
+<style >
+  h1,h2, h3, h4, h5, a{  
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    font-weight: bolder;
+}
+
+
+
+</style>
+
+<!--
+<style>
+	h1{  font-family: 'Bebas Neue', cursive;
+}
+
+    body {
+  background-color: black;
+  height: 100vh;
+
+  align-items:center;
+  justify-content: center;
+
+  font-weight: bold;
+  text-align: right;
+	}
+
+	/* Css - Texto con Degradado#031b27 */
+	h1,h2, h3,h4, h5, h6, ul, li{
+    animation: fluido 10s ease-in-out infinite;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 300%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+		}
+
+
+	p{
+
+  animation: fluido 10s ease-in-out infinite;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 300%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+	}
+
+	@keyframes fluido {
+    0% { background-position: 0 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0 50% }
+					}
+</style>
+
+-->
+
+
+
+</body>
+
+
+
+
+
+
+</html>

@@ -1,0 +1,20 @@
+{% extends 'citas/base.html' %}
+
+{% block content %}
+
+<script type="text/javascript">
+
+  window.alert(' ¡Por cierto, mi amor Bianquita felicidades por tú empleo. Yo se que eres la mejor :D! ');
+</script>
+    <h3 class="text-center">Agrega un Nuevo lugar</h3>
+
+    <form  action=" {% url 'citas:edicion' %}" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="AGREGA UN NUEVO LUGAR">
+	</form>
+
+	
+
+
+{% endblock %}

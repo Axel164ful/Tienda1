@@ -1,0 +1,219 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- fuente -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Bebas+Neue&family=Dancing+Script&family=Shizuru&display=swap" rel="stylesheet"> 
+
+
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!--este maldito le da la propiedad responsive :S -->
+
+	<link rel="stylesheet" type="text/css" href="{% static 'cyber/styles2.css' %}">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+
+	<!--Head block -->
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="header">
+
+			<div id="logo"><img src= "{% static 'cyber/imagen/logo.png'%}" class="img-responsive" id="logo"></div>
+
+
+		</div>
+	</div>
+	<!--Middle block-->	
+	<div class="row">
+		<div class="col-lg-12 col-sd-12 col-sm-12 col-xs-12 ">
+			<!--Barra de busqueda -->
+			<div id="BusquedaG">
+						<center>
+							<FORM method=GET action="http://www.google.com/search">
+								<TABLE bgcolor="#fde0a2 "><tr><td>
+								<A HREF="http://www.google.com/">
+								<IMG SRC="{%static 'cyber/imagen/logoGoo.png'%}" border="0" ALT="Google" align="absmiddle"  height="80" >
+								<!--<IMG SRC="https://www.trecebits.com/wp-content/uploads/2015/09/nuevo_logo_google.jpg" border="0" ALT="Google" align="absmiddle" width="130" height="90" > --> </A>
+								<INPUT TYPE=text name=q size=31 maxlength=255 value="">
+								<INPUT TYPE=hidden name=hl value=es>
+								<INPUT type=submit name=btnG VALUE="Búsqueda Google" style="color:#1a889f;">
+								</td></tr></TABLE>
+							</FORM>
+						</center>
+				</div>
+		</div>
+	</div>
+	<!--Primer fila -->
+	<div class="row">
+
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<div id="prueba1" class="prueba1">
+				<br>
+				<h2 class="text-center">FOTOCOPIAS</h2>
+					
+				<h3 class="text-center">COLOR</h3>
+				
+				<h4 class="text-center">7 pesos c/u</h4>
+				<br>
+				<h3 class="text-center">BLANCO Y NEGRO</h3>
+				<H4 class="text-center">1 PESO CADA UNA</H4>
+			</div>
+		</div>
+
+
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<div id="prueba1">
+				<br>
+				<h2 class="text-center">IMPRESIÓN</h2>
+					
+				<h3 class="text-center">COLOR</h3>
+				
+				<h4 class="text-center">7 pesos c/u</h4>
+				<br>
+				<h3 class="text-center">BLANCO Y NEGRO</h3>
+				<H4 class="text-center">1 PESO CADA UNA</H4>
+			</div>
+		</div>
+
+
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<div id="prueba1">
+				<br>
+				<h3 class="text-center">REPARACIONES</h3>
+					
+				<h3 class="text-center">EQUIPOS DE COMPUTO</h3>
+				<br>
+				<h4 class="text-center">PROGRAMAS</h4>
+
+				<H4 class="text-center">FORMATEOS</H4>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="row">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<a href="https://www.ilovepdf.com/es">
+				<div id="prueba1" class="prueba1">
+				<br>
+				<h3 class="text-center">HERRAMIENTA PARA PDF</h3>
+				<div><img src="{% static 'cyber/imagen/ilovepdf.png'%}" class="img-responsive"></div>
+			</div>
+			</a>
+		</div>
+
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			
+			<div id ="prueba1">
+				<br>
+				<h3 class="text-center">DISEÑO DE PAGINAS WEB</h3>
+				<br>
+				<h3 class="text-center">Y</h3>
+				<br>
+				<H3 class="text-center">BLOG DE DIVULGACIÓN</H3>
+			</div>
+
+		</div>
+
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<div id="prueba1">
+				<br>
+
+				<h3 class="text-center">{{some_data}}</h3>
+
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1881.9394855057676!2d-98.93838416210473!3d19.374392518457604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1645051439216!5m2!1ses-419!2smx" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			<br>
+		</div>
+
+
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="pie">
+				
+				
+
+
+			</div>
+		</div>
+
+
+		
+		
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+    	var index = 0;
+
+    	var listaimg = ["{% static 'cyber/imagen/fondo2.jpg' %}","{% static 'cyber/imagen/fondo3.jpg' %}", "{% static 'cyber/imagen/fondo4.jpg' %}"];
+
+		$(function() {
+  
+    	setInterval(changeImage, 30000);
+  
+						});
+
+		function changeImage() {
+  
+ 
+   					$('body').css("background-image", 'url(' + listaimg[index] + ')');
+                  
+   						index++;
+                  
+   						if(index == 3)
+      					index = 0;
+    
+    
+								}
+    </script>
+  <style type="text/css">
+  	body {
+  		background-image: url("{% static 'cyber/imagen/fondo1.jpg'%}");
+  		background-size: cover;
+  		background-repeat: no-repeat;
+  		margin: 0;
+  		height: 100vh;
+  		background-attachment: fixed;
+}
+  </style>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+</html>
